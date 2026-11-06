@@ -102,42 +102,43 @@ Displays model evaluation metrics, including:
 
 ## 3. System Architecture
 
-CreditLens follows a frontend-backend architecture with an integrated machine-learning pipeline.
+CreditLens follows a frontend-backend architecture integrated with a machine-learning prediction pipeline.
+
+### Architecture Workflow
 
 ```mermaid
 flowchart TD
-    A[Applicant Profile] --> B[React Frontend]
-    B --> C[FastAPI Backend]
-    C --> D[Pydantic Validation]
-    D --> E[Data Preprocessing]
-    E --> F[Gradient Boosting Model]
-    F --> G[Default Probability]
-    G --> H[Risk Scoring Engine]
-    F --> I[SHAP Explainability]
-    H --> J[Risk Category]
-    I --> K[Feature Explanations]
-    J --> L[Dashboard]
+    A["Applicant Profile"] --> B["React Frontend"]
+    B --> C["FastAPI Backend"]
+    C --> D["Pydantic Validation"]
+    D --> E["Data Preprocessing"]
+    E --> F["Gradient Boosting Model"]
+    F --> G["Default Probability"]
+    G --> H["Risk Scoring Engine"]
+    F --> I["SHAP Explainability"]
+    H --> J["Risk Category"]
+    I --> K["Feature Explanations"]
+    J --> L["Dashboard"]
     K --> L
-    H --> M[Recommendation Engine]
+    H --> M["Recommendation Engine"]
     M --> L
-    C --> N[SQLite Database]
-    N --> O[Applicant Records]
-    N --> P[Risk History]
-    L --> Q[What-If Simulator]
+    C --> N["SQLite Database"]
+    N --> O["Applicant Records"]
+    N --> P["Risk History"]
+    L --> Q["What-If Simulator"]
 ```
 
-### Workflow
+### Workflow Explanation
 
-1. The user enters an applicant's financial information.
-2. The React frontend sends the information to the FastAPI backend.
-3. Pydantic validates the incoming data.
-4. The preprocessing pipeline transforms the input features.
-5. The trained machine-learning model estimates default probability.
-6. The risk engine calculates financial risk dimensions and an overall score.
-7. SHAP generates feature-level explanations.
-8. The recommendation engine generates contextual guidance.
-9. Assessment information is stored in SQLite.
-10. Results are presented through the dashboard.
+1. **Input:** User submits an applicant's financial profile.
+2. **Validation:** FastAPI and Pydantic validate the incoming information.
+3. **Preprocessing:** Input features are transformed using the trained preprocessing pipeline.
+4. **Prediction:** Gradient Boosting estimates the probability of default.
+5. **Risk Analysis:** The risk engine calculates financial risk dimensions and an overall risk score.
+6. **Explainability:** SHAP identifies features influencing the prediction.
+7. **Recommendation:** The recommendation engine generates contextual guidance.
+8. **Storage:** Applicant profiles and assessment history are maintained in SQLite.
+9. **Visualization:** Results are presented through the React dashboard.
 
 ---
 

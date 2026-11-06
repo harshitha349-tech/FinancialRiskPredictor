@@ -398,43 +398,7 @@ CreditLens exposes REST API endpoints through FastAPI.
 Refer to the interactive Swagger documentation for request schemas and response formats.
 
 ---
-
-## 10. Application Screenshots
-
-Screenshots of the running application can be added here.
-
-Create a folder named `docs/screenshots/` and add the following images:
-
-```text
-docs/
-└── screenshots/
-    ├── dashboard.png
-    ├── assessment.png
-    ├── risk-analysis.png
-    ├── simulator.png
-    ├── model-insights.png
-    └── monitoring.png
-```
-
-Embed them in this section using Markdown:
-
-```markdown
-![CreditLens Dashboard](docs/screenshots/dashboard.png)
-
-![Credit Risk Assessment](docs/screenshots/assessment.png)
-
-![Risk Analysis](docs/screenshots/risk-analysis.png)
-
-![What-If Simulator](docs/screenshots/simulator.png)
-
-![Model Insights](docs/screenshots/model-insights.png)
-
-![Risk Monitoring](docs/screenshots/monitoring.png)
-```
-
----
-
-## 11. Testing
+## 10. Testing
 
 The project includes API and core functionality tests under the `tests/` directory.
 
@@ -452,7 +416,7 @@ pip install pytest
 
 ---
 
-## 12. Limitations and Future Scope
+## 11. Limitations and Future Scope
 
 ### Current Limitations
 
@@ -474,7 +438,7 @@ pip install pytest
 
 ---
 
-## 13. Responsible Use
+## 12. Responsible Use
 
 CreditLens is an academic prototype developed for educational and demonstration purposes.
 
@@ -484,7 +448,7 @@ Any real-world use would require representative data, independent validation, fa
 
 ---
 
-## 14. Author
+## 13. Author
 
 **Harshitha Yamsani**
 

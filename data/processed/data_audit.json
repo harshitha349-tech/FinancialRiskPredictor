@@ -1,0 +1,8 @@
+{
+  "rows": 1000,
+  "columns": 21,
+  "duplicates": 0,
+  "missing_cells": 0,
+  "default_risk_class_rate": 0.301,
+  "dataset_status": "synthetic_demo_data"
+}
